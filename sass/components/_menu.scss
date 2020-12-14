@@ -1,0 +1,10 @@
+.menu {
+    display: flex;
+  }
+  .menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+.menu-item .menu-link:hover,
+.menu-item .menu-link:focus {
+  font-weight: 800;
+}

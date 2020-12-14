@@ -1,0 +1,21 @@
+.hero-title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+  }
+  .hero-text {
+    max-width: 380px;
+    margin-bottom: 50px;
+  }
+  .hero {
+    padding-bottom: 200px;
+    background-image: url(../images/bg-hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 10% bottom 100px;
+  }
+  
+  .hero-content {
+    width: calc(100% / 12 * 7);
+  }
