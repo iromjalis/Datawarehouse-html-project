@@ -33,6 +33,11 @@
   height: 60px;
   border-radius: 50px;
   background-color: transparent;
+  &:hover {
+    font-weight: 800;
+    background-color: #fff;
+    color: $button-bg;
+  }
 }
 
 ul,

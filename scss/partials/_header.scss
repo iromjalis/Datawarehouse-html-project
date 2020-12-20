@@ -59,6 +59,7 @@
   background: #fff;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
+  border: 1px solid transparent;
 
   font-family: Avenir;
   font-style: normal;
@@ -74,5 +75,6 @@
 
   &:hover {
     background-color: $button-bg;
+    color: #fff;
   }
 }

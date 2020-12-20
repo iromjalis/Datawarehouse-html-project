@@ -1,3 +1,7 @@
+.hero-section {
+  background-image: url();
+}
+
 .hero-title {
   width: 645px;
   font-family: Helvetica;
@@ -5,13 +9,8 @@
   font-weight: bold;
   font-size: 80px;
   line-height: 110%;
-  /* or 88px */
-
   display: flex;
   align-items: center;
-
-  /* 2 */
-
   color: $title-color;
 }
 
@@ -27,7 +26,14 @@
 
 .hero-button {
   @extend %button;
-  background: #9c69e2;
+  border: transparent;
+  background: $button-bg;
   border-radius: 50px;
   color: #fff;
+
+  &:hover {
+    font-weight: 800;
+    background-color: #fff;
+    color: $button-bg;
+  }
 }
