@@ -1,0 +1,33 @@
+.hero-title {
+  width: 645px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 110%;
+  /* or 88px */
+
+  display: flex;
+  align-items: center;
+
+  /* 2 */
+
+  color: $title-color;
+}
+
+.hero-text {
+  width: 380px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  color: $text-color;
+}
+
+.hero-button {
+  @extend %button;
+  background: #9c69e2;
+  border-radius: 50px;
+  color: #fff;
+}
