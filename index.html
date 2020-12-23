@@ -9,14 +9,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="" class="logo"
-            ><img src="./images/logo.svg" alt="" class="logo-img" width="49" height=""
+            ><img
+              src="./images/logo.svg"
+              alt=""
+              class="logo-img"
+              width="49"
+              height=""
           /></a>
           <ul class="list menu">
             <li class="menu-item">
@@ -35,19 +40,23 @@
         </nav>
         <a href="" class="btn">
           Request Demo
-          <svg class="btn-arrow" width="20" height="14"> <use href= "./images/sprite.svg#icon-line-right"></use></svg>
+          <svg class="btn-arrow" width="20" height="14">
+            <use href="./images/sprite.svg#icon-line-right"></use>
+          </svg>
         </a>
       </div>
     </header>
     <section class="section hero">
       <div class="container">
-        <h1 class="hero-title title">Save your data storage here.</h1>
-        <p>
-          Data Warehouse is a data storage area that has been tested for
-          security, so you can store your data here safely but not be afraid of
-          being stolen by others.
-        </p>
-        <a class="btn">Learn more</a>
+        <div class="hero-content">
+          <h1 class="hero-title title">Save your data storage here.</h1>
+          <p class="hero-text">
+            Data Warehouse is a data storage area that has been tested for
+            security, so you can store your data here safely but not be afraid
+            of being stolen by others.
+          </p>
+          <a class="btn accent-btn">Learn more</a>
+        </div>
       </div>
     </section>
     <section class="section about">
@@ -68,11 +77,14 @@
     </section>
     <section class="section feature">
       <div class="container">
-        <h2 class="section-title title">Features</h2>
-        <p>
-          Some of the features and advantages that we provide for those of you
-          who store data in this Data Warehouse.
-        </p>
+        <div class="feature-content">
+          <h2 class="section-title title">Features</h2>
+          <p>
+            Some of the features and advantages that we provide for those of you
+            who store data in this Data Warehouse.
+          </p>
+        </div>
+
         <ul class="list features-list">
           <li class="features-item">
             <h3 class="features-iteme-title title">Search Data</h3>
@@ -111,20 +123,94 @@
         </ul>
       </div>
     </section>
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title title">Testimonials</h2>
+        <div class="slaider">
+          <article class="slaider-item">
+            <img
+              src="./images/john-fang.jpg"
+              alt="Портрет John Fang"
+              class="slaider-img"
+            />
+            <div class="article-description">
+              <h3 class="slaider-title">John Fang</h3>
+              <p class="slaider-position">
+                <a href="#" class="slaider-link link">wordfaang.com </a>
+              </p>
+              <p class="slaider-text">
+                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                aenean nam laoreet nulla.
+              </p>
+            </div>
+          </article>
+          <article class="slaider-item">
+            <img
+              src="./images/jeny-doe.jpg"
+              alt="Портрет Jeny Doe"
+              class="slaider-img"
+            />
+            <div class="article-description">
+              <h3 class="slaider-title">Jeny Doe</h3>
+              <p class="slaider-position">UX Engineer</p>
+              <p class="slaider-text">
+                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                viverra enim erat tortor
+              </p>
+            </div>
+          </article>
+          <article class="slaider-item">
+            <img
+              src="./images/william.jpg"
+              alt="Портрет William"
+              class="slaider-img"
+            />
+            <div class="article-description">
+              <h3 class="slaider-title">William</h3>
+              <p class="slaider-position">Web Designer</p>
+              <p class="slaider-text">
+                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                viverra enim erat tortor
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="slaider-buttoms">
+          <button
+            type="button"
+            data-slick-prev
+            class="slaider-button-right"
+          ></button>
+          <button
+            type="button"
+            data-slick-next
+            class="slaider-button-left"
+          ></button>
+        </div>
+      </div>
+    </section>
     <section class="section offer">
       <div class="container">
         <div class="offer-content">
           <h2 class="section-title title">Try for free!</h2>
-          <p>Get limited 1 week free try our features!</p>
+          <p class="offer-text">Get limited 1 week free try our features!</p>
         </div>
-        <a href="" class="btn">Learn more</a>
-        <a href="" class="btn">Request Demo</a>
+        <div class="offer-btn">
+          <a href="#" class="btn btn-pink">Learn more</a>
+          <a href="" class="btn">
+            Request Demo
+            <svg class="btn-arrow" width="20" height="14">
+              <use href="./images/sprite.svg#icon-line-right"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="container">
+      <div class="container flex">
         <section class="footer-widget">
-          <a href="" class="logo"
+          <a href="" class="logo link"
             ><img
               src="./images/logo.svg"
               alt=""
@@ -132,47 +218,51 @@
             />DataWarehouse</a
           >
           <address>
-            <p>Warehouse Society, 234 Bahagia Ave Street PRBW 29281</p>
-            <a href="" class="address-link">info@warehouse.project</a>
-            <a href="" class="address-link">1-232-3434 (Main)</a>
+            <p>
+              Warehouse Society, 234<br />
+              Bahagia Ave Street PRBW 29281
+            </p>
+            <a href="" class="address-link link">info@warehouse.project</a
+            ><br />
+            <a href="" class="address-link link">1-232-3434 (Main)</a>
           </address>
         </section>
         <section class="footer-widget">
           <ul class="menu footer-menu list">
             <li class="menu-item">
               <h3 class="menu-item-title">About</h3>
-              <ul class="submenu">
+              <ul class="submenu list">
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">Profile </a>
+                  <a href="" class="submenu-link link">Profile </a>
                 </li>
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">Features</a>
+                  <a href="" class="submenu-link link">Features</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">Careers</a>
+                  <a href="" class="submenu-link link">Careers</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">DW News</a>
+                  <a href="" class="submenu-link link">DW News</a>
                 </li>
               </ul>
             </li>
             <li class="menu-item">
               <h3 class="menu-item-title">Help</h3>
-              <ul class="submenu">
+              <ul class="submenu list">
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">Support </a>
+                  <a href="" class="submenu-link link">Support </a>
                 </li>
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">Sign up</a>
+                  <a href="" class="submenu-link link">Sign up</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">Guide</a>
+                  <a href="" class="submenu-link link">Guide</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">Reports</a>
+                  <a href="" class="submenu-link link">Reports</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="" class="submenu-link">Q&A</a>
+                  <a href="" class="submenu-link link">Q&A</a>
                 </li>
               </ul>
             </li>
@@ -182,7 +272,7 @@
                 <li class="social-item">
                   <a
                     href=""
-                    class="social-link"
+                    class="social-link link"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="facebook-link"
@@ -195,7 +285,7 @@
                 <li class="social-item">
                   <a
                     href=""
-                    class="social-link"
+                    class="social-link link"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="twitter-link"
@@ -208,7 +298,7 @@
                 <li class="social-item">
                   <a
                     href=""
-                    class="social-link"
+                    class="social-link link"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="instagram-link"
@@ -228,5 +318,15 @@
         <p>Company Registration Number: 21479524.</p>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
